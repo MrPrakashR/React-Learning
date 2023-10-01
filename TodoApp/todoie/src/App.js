@@ -7,8 +7,9 @@ import './style.css';
 function App() {
   return (
     <div className='todo-container'>
-      <Header />
-      <TodoItem />
+      <Header title="Todo App" />
+      <TodoItem text="EAT" completed={true} />
+      <TodoItem text="MET" />
       <Button />
     </div>
   )

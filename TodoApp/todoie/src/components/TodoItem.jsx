@@ -1,11 +1,11 @@
 import React from "react";
 
-const TodoItem = () => {
+const TodoItem = (prop) => {
     return (
         <li className="todo-item">
             <span>
-            <input type="checkbox" />
-            <span className="todo-item-title">Eat</span>
+            { prop.completed ? <></> :<input type="checkbox" />}
+            <span className="todo-item-title">{prop.text}</span>
             </span>
             <p>...</p> 
         </li>
